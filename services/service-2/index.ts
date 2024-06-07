@@ -41,8 +41,9 @@ export default {
 
     if (path.endsWith('/response')) {
       using rpcResponse = await env.CLOUDFLARE_RPC_TEST_SERVICE_1.getResponse();
-      console.log('response:', await rpcResponse.text());
-      return rpcResponse;
+      const response = rpcResponse.clone();
+      console.log('response:', await response.text());
+      return response;
     }
 
     if (path.endsWith('/queue')) {
@@ -88,7 +89,7 @@ export default {
 
           if (message.body === 'response') {
             using rpcResponse = await env.CLOUDFLARE_RPC_TEST_SERVICE_1.getResponse();
-            console.log('response:', await rpcResponse.text());
+            console.log('response:', rpcResponse);
           }
 
           message.ack();

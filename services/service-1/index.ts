@@ -14,9 +14,6 @@ class Counter extends RpcTarget {
 }
 
 export default class extends WorkerEntrypoint {
-  async fetch() {
-    return new Response('Hello, world!');
-  }
   async getResponse() {
     return new Response('This is a Response object');
   }
