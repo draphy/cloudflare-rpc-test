@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20240405.0",
-    "@cloudflare-rpc-test/service-2": "workspace:^",
     "typescript": "5.4.2",
     "wrangler": "3.48.0"
   }

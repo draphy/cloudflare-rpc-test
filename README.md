@@ -2,15 +2,14 @@
 
 This is the monorepo that contains all code related to RPC testing.
 
-# Testing 
-you can use the service 2 endpoint in the cloudflare for testing 
+# Testing
 
-e.g `url/RPCReturnType` 
+you can use the service 2 endpoint in the cloudflare for testing
 
 currently it supports these types
 
 ```
-type RPCReturnType = "function" | "response" | "serialiazableObject" | "classInstance"
+type RPCReturnType = "function" | "response" | "object" | "classInstance"
 ```
 
 ## Package manager and dependencies
