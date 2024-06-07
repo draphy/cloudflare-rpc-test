@@ -1,0 +1,18 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.renderWhitespace": "boundary",
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}

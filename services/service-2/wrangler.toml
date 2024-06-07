@@ -1,0 +1,17 @@
+name = "cloudflare-rpc-test-service-2"
+main = "index.ts"
+compatibility_date = "2024-04-05"
+compatibility_flags = ["nodejs_compat"]
+logpush = true
+workers_dev = true
+
+queues.producers = [
+    { binding = "CLOUDFLARE_RPC_TEST_QUEUE", queue = "cloudflare-rpc-test" },
+]
+queues.consumers = [
+    { queue = "cloudflare-rpc-test", max_batch_size = 25, max_batch_timeout = 5, max_retries = 10 },
+]
+
+services = [
+    { binding = "CLOUDFLARE_RPC_TEST_SERVICE_1", service = "cloudflare-rpc-test-service-1" },
+]

@@ -1,0 +1,23 @@
+{
+  "name": "cloudflare-rpc-test",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@types/bun": "^1.0.5",
+    "prettier": "^3.2.4",
+    "typescript": "5.4.2"
+  },
+  "engines": {
+    "node": "21.7.3",
+    "pnpm": "9.0.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.20.2",
+      "@biomejs/biome": "1.5.3"
+    }
+  },
+  "packageManager": "pnpm@9.0.1+sha256.46d50ee2afecb42b185ebbd662dc7bdd52ef5be56bf035bb615cab81a75345df"
+}

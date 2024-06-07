@@ -1,0 +1,6 @@
+name                = "cloudflare-rpc-test-service-1"
+main                = "index.ts"
+compatibility_date  = "2024-04-05"
+compatibility_flags = ["nodejs_compat"]
+logpush             = true
+workers_dev         = true

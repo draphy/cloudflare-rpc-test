@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "../services/service-1"
+    },
+    {
+      "path": "../services/service-2"
+    },
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+}

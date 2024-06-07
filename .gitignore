@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+build
+/package
+!.env.example
+log
+.eslintcache
+bun.lockb
+.env
+dist
+.dev.vars
+.wrangler

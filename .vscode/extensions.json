@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "oxc.oxc-vscode",
+    "esbenp.prettier-vscode",
+    "YoavBls.pretty-ts-errors",
+    "mxsdev.typescript-explorer",
+    "biomejs.biome"
+  ]
+}
