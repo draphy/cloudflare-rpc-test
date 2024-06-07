@@ -27,7 +27,15 @@ The service also has a queue event listener that processes the messages from the
 
 After deploying the Worker, you can send requests to the service using the appropriate URL format:
 
-* For a "Hello World" response: https://<your-worker-url>/
-* For an RPC request: https://<your-worker-url>/<rpc-return-type>
+* For a "Hello World" response: https://`your-worker-url`/
+* For an RPC request: https://`your-worker-url`/`rpc-return-type`
 
-Replace <your-worker-url> with the actual URL of your deployed Worker, and <rpc-return-type> with one of the valid RPC return types (response, serialiazableObject, function, or classInstance).
+Replace `your-worker-url` with the actual URL of your deployed Worker, and `rpc-return-type` with one of the valid RPC return types (response, serialiazableObject, function, or classInstance).
+
+#### RPCReturnType
+
+Currently this service support this type testing
+
+```
+type RPCReturnType = "function" | "response" | "serialiazableObject" | "classInstance"
+```
